@@ -14,13 +14,13 @@ namespace PPGgame.Actions
     {
         int hp = 0;
         int protection = 0;
-        int attack = 0;
+        int damage = 0;
         int duration = 1;
 
 
         public int Hp { get => hp; set => hp = value; }
         public int Protection { get => protection; set => protection = value; }
-        public int Attack { get => attack; set => attack = value; }
+        public int Damage { get => damage; set => damage = value; }
     }
     public class Interaction //Взаємодія
     {
