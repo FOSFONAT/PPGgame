@@ -3,7 +3,7 @@ using PPGgame.Actions;
 
 namespace PPGgame
 {
-    class Program
+    class Program //Юзлес піс оф коде
     {
         static void Main(string[] args)
         {

@@ -5,24 +5,24 @@ namespace PPGgame.Actions
 {
     public class Regeneration : Effect
     {
-        public Regeneration()
+        public Regeneration() //Регенерація
         {
             Hp = 10;
         }
     }
-    public class Effect
+    public class Effect //Ефект
     {
         int hp = 0;
         int protection = 0;
-        int attak = 0;
-        int hold = 1;
+        int attack = 0;
+        int duration = 1;
 
 
         public int Hp { get => hp; set => hp = value; }
         public int Protection { get => protection; set => protection = value; }
-        public int Attak { get => attak; set => attak = value; }
+        public int Attack { get => attack; set => attack = value; }
     }
-    public class Interaction
+    public class Interaction //Взаємодія
     {
         int magic_damage = 0;
         int hp_damage = 0;
@@ -36,7 +36,7 @@ namespace PPGgame.Actions
 
 
     }
-    public class Action
+    public class Action //Дії
     {
         List<Interaction> interactions = new List<Interaction>();
         List<Effect> effects = new List<Effect>();

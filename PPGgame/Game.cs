@@ -17,9 +17,9 @@ namespace PPGgame
             List<Command> commands = new List<Command>();
             while (true)
             {
-                Console.WriteLine("VC - View Comand");
-                Console.WriteLine("CC - Create Comand");
-                Console.WriteLine("RC - Remove Comand");
+                Console.WriteLine("VC - View Command");
+                Console.WriteLine("CC - Create Command");
+                Console.WriteLine("RC - Remove Command");
                 Console.WriteLine("AU - Add Unit");
                 Console.WriteLine("RU - Remove Unit");
                 Console.WriteLine("/ - Out");
@@ -27,7 +27,7 @@ namespace PPGgame
                 string str;
                 str = Console.ReadLine();
 
-                if (str == "VC")
+                if (str == "VC") //Виводить список комманд
                 {
                     for (int i = 0; i < commands.Count; i++)
                     {
@@ -39,12 +39,12 @@ namespace PPGgame
                     }
                 }
 
-                if (str == "CC")
+                if (str == "CC") //Створити нову комманду
                 {
                     commands.Add(new Command());
                 }
 
-                if (str == "RC")
+                if (str == "RC") //Видалити комманду
                 {
                     int index;
                     index = Convert.ToInt32(Console.ReadLine());
@@ -54,9 +54,9 @@ namespace PPGgame
                     }
                 }
 
-                if (str == "AU")
+                if (str == "AU") //Створення юніту(перса)
                 {
-                    Console.WriteLine("Вибери команду");
+                    Console.WriteLine("Вибери команду"); //Вибір !КЛАССУ!
                     int index_c;
                     index_c = Convert.ToInt32(Console.ReadLine());
                     while (true)
@@ -75,7 +75,7 @@ namespace PPGgame
                         }
                     }
                 }
-                if (str == "RU")
+                if (str == "RU") //Видалити юніта(перса)
                 {
                     Console.WriteLine("Вибери команду");
                     int index_c;
@@ -94,7 +94,7 @@ namespace PPGgame
                     }
                 }
 
-                if (str == "/")
+                if (str == "/") //Вихід
                 {
                     break;
                 }
