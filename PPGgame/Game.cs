@@ -17,8 +17,27 @@ namespace PPGgame
             List<Command> commands = new List<Command>();
             while (true)
             {
+                Console.WriteLine("VC - View Comand");
+                Console.WriteLine("CC - Create Comand");
+                Console.WriteLine("RC - Remove Comand");
+                Console.WriteLine("AU - Add Unit");
+                Console.WriteLine("RU - Remove Unit");
+                Console.WriteLine("/ - Out");
+
                 string str;
                 str = Console.ReadLine();
+
+                if (str == "VC")
+                {
+                    for (int i = 0; i < commands.Count; i++)
+                    {
+                        Console.WriteLine(i.ToString() + ")");
+                        for (int j = 0; j < commands[i].Units.Count; j++)
+                        {
+                            Console.WriteLine(commands[i].Units[j].Name);
+                        }
+                    }
+                }
 
                 if (str == "CC")
                 {
@@ -35,12 +54,15 @@ namespace PPGgame
                     }
                 }
 
-                if (str == "A")
+                if (str == "AU")
                 {
+                    Console.WriteLine("Вибери команду");
                     int index_c;
                     index_c = Convert.ToInt32(Console.ReadLine());
                     while (true)
                     {
+                        Console.WriteLine("W1 - Warrior_1");
+                        Console.WriteLine("/ - Out");
                         str = Console.ReadLine();
                         if (str == "W1")
                         {
@@ -53,15 +75,18 @@ namespace PPGgame
                         }
                     }
                 }
-                if (str == "R")
+                if (str == "RU")
                 {
+                    Console.WriteLine("Вибери команду");
                     int index_c;
                     index_c = Convert.ToInt32(Console.ReadLine());
                     while (true)
                     {
+                        Console.WriteLine("Вибери кого");
+                        Console.WriteLine("число < 0 - вийти");
                         int index;
                         index = Convert.ToInt32(Console.ReadLine());
-                        
+
                         if (index < 0)
                         {
                             break;
