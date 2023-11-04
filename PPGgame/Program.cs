@@ -7,7 +7,9 @@ namespace PPGgame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Game game = new Game();
+           game.Start();
+            //Console.WriteLine("Hello World!");
         }
     }
 }

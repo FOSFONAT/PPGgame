@@ -46,12 +46,18 @@ namespace PPGgame
 
                 if (str == "RC")
                 {
-                    int index;
-                    index = Convert.ToInt32(Console.ReadLine());
-                    if (index > 0)
+                    Console.WriteLine("Вибери команду");
+                    while (true)
                     {
+                        int index;
+                        index = Convert.ToInt32(Console.ReadLine());
+                        if (index < 0)
+                        {
+                            break;
+                        }
                         commands.RemoveAt(index);
                     }
+
                 }
 
                 if (str == "AU")
@@ -86,11 +92,11 @@ namespace PPGgame
                         Console.WriteLine("число < 0 - вийти");
                         int index;
                         index = Convert.ToInt32(Console.ReadLine());
-
                         if (index < 0)
                         {
                             break;
                         }
+                        commands[index_c].Units.RemoveAt(index);
                     }
                 }
 
