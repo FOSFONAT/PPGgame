@@ -46,7 +46,9 @@ namespace PPGgame
 
                 if (str == "RC")
                 {
-                    Console.WriteLine("Вибери команду");
+                    Console.WriteLine("Вибери команду"); 
+                    Console.WriteLine("число < 0 - вийти");
+
                     while (true)
                     {
                         int index;

@@ -15,7 +15,7 @@ namespace PPGgame.Actions
         int hp = 0;
         int protection = 0;
         int attak = 0;
-        int hold = 1;
+        int time = 1;
 
 
         public int Hp { get => hp; set => hp = value; }
